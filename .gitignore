@@ -26,3 +26,6 @@ src/temp
 
 # dotenv files
 .env
+
+# database files
+db/
