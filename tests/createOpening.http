@@ -1,0 +1,13 @@
+### ---------- CREATE OPENING
+POST http://localhost:8000/api/v1/opening
+content-type: "application/plain"
+
+{
+    "role": "SRE Specialist",
+    "company": "AWS",
+    "location": "Germany",
+    "remote": true,
+    "link": "vaga.com/aws/sre",
+    "salary": 180000
+}
+###
