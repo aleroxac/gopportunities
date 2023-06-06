@@ -1,0 +1,27 @@
+version: '3'
+
+networks:
+  gopportunities:
+
+services:
+  app:
+    hostname: app
+    container_name: app
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      tags: 
+        - aleroxac/gopportunities
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    env_file: ../.env
+    ports:
+      - "8000:8000"
+    networks: ["gopportunities"]
+    healthcheck:
+      test: ["CMD", "wget", "-O", "-", "http://localhost:8000/api/v1/healthz"]
+      start_period: 5s
+      interval: 10s
+      timeout: 3s
+      retries: 3
