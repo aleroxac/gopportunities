@@ -22,6 +22,7 @@ go.work
 
 # Temporary folders
 .tmp
+tmp
 src/temp
 
 # dotenv files
