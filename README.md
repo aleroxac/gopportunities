@@ -4,7 +4,7 @@ A REST API of job opportunities.
 ## Features
 - SQLite
 - GoORM
-- Go-Gin
+- Gin-Gonic
 - Swagger
 
 
