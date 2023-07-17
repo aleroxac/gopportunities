@@ -1,0 +1,3 @@
+### ---------- DELETE OPENING
+DELETE http://localhost:8000/api/v1/opening?id=1
+content-type: "application/plain"
